@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiring Platform Wireframe</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow">Responsive Product Wireframe</p>
+        <h1>Consultancy-Led Hiring Platform for India</h1>
+        <p class="lead">
+          Low-fidelity wireframe covering the full journey for jobseekers, verified employers,
+          consultancy HR operators, and founder-level admin access.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">Desktop + Mobile</span>
+          <span class="chip">Consultancy-Mediated Hiring</span>
+          <span class="chip">99% Match Logic UI</span>
+          <span class="chip">Hidden Contact Flow</span>
+        </div>
+      </div>
+
+      <aside class="hero__panel">
+        <div class="flow-card">
+          <p class="panel-label">Core Workflow</p>
+          <div class="flow-track">
+            <span>Jobseeker Profile</span>
+            <span>Smart Job Match</span>
+            <span>Consultancy Screening</span>
+            <span>Employer Shortlist</span>
+            <span>Hire Request</span>
+          </div>
+        </div>
+
+        <div class="scope-card">
+          <p class="panel-label">Captured in this wireframe</p>
+          <ul class="scope-list">
+            <li>Home navigation restricted to Home, Jobseeker, Employer, Login, Signup</li>
+            <li>Profile-first onboarding for both jobseekers and employers</li>
+            <li>Matching dashboards with controlled visibility and hidden direct contact</li>
+            <li>Consultancy dashboard for HR operators and founder-only admin panel</li>
+          </ul>
+        </div>
+      </aside>
+    </header>
+
+    <nav class="control-bar" aria-label="Prototype controls">
+      <div class="filter-group">
+        <button class="filter is-active" data-filter="all">All Screens</button>
+        <button class="filter" data-filter="desktop">Desktop Only</button>
+        <button class="filter" data-filter="mobile">Mobile Only</button>
+      </div>
+
+      <div class="anchor-group">
+        <a href="#screen-home">Home</a>
+        <a href="#screen-jobseeker-create">Jobseeker</a>
+        <a href="#screen-employer-register">Employer</a>
+        <a href="#screen-consultancy">Consultancy</a>
+        <a href="#screen-admin">Admin</a>
+      </div>
+    </nav>
+
+    <main class="screen-stack">
+      <section class="screen-group" id="screen-home">
+        <div class="group-heading">
+          <p class="eyebrow">Screen 01</p>
+          <h2>Home Page</h2>
+          <p>
+            Brand-led landing page that explains the platform problem and solution, with only the
+            requested top navigation items and all secondary links pushed into the footer.
+          </p>
+        </div>
+
+        <div class="frame-row">
+          <article class="device device--desktop" data-kind="desktop">
+            <div class="device__label">Desktop View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--desktop">
+                <header class="wf-header">
+                  <div class="wf-brand">
+                    <span class="brand-mark"></span>
+                    <strong>Brand / Logo</strong>
+                  </div>
+                  <nav class="wf-top-links">
+                    <span>Home</span>
+                    <span>Jobseeker</span>
+                    <span>Employer</span>
+                    <span>Login</span>
+                    <span>Signup</span>
+                  </nav>
+                </header>
+
+                <section class="wf-grid wf-grid--hero">
+                  <div class="wf-card wf-card--feature">
+                    <p class="wf-kicker">Main brand promise</p>
+                    <h3>Verified hiring bridge between employers and jobseekers</h3>
+                    <p>
+                      Human-assisted platform where consultancy handles verification, matching,
+                      notification routing, and controlled communication.
+                    </p>
+                    <div class="wf-btn-row">
+                      <span class="wf-btn wf-btn--solid">Login</span>
+                      <span class="wf-btn">Signup</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Problem to solution structure</p>
+                    <div class="wf-step-list">
+                      <span>Fake listings and bad-fit applicants</span>
+                      <span>Structured profiles and verified companies</span>
+                      <span>99% profile match shown in dashboards</span>
+                      <span>Consultancy manages applications and hiring actions</span>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="wf-grid wf-grid--three">
+                  <div class="wf-card">
+                    <p class="wf-kicker">Jobseeker lane</p>
+                    <h4>Create profile</h4>
+                    <p>Personal details, job info, resume builder, preferred area, relocation choice.</p>
+                  </div>
+                  <div class="wf-card">
+                    <p class="wf-kicker">Employer lane</p>
+                    <h4>Register company</h4>
+                    <p>Legal company verification, job post form, shortlist and hire requests.</p>
+                  </div>
+                  <div class="wf-card">
+                    <p class="wf-kicker">Consultancy lane</p>
+                    <h4>Manage flow</h4>
+                    <p>Operators review applications, calls, resume views, and employer actions.</p>
+                  </div>
+                </section>
+
+                <section class="wf-grid wf-grid--stats">
+                  <div class="wf-stat">
+                    <strong>Verified company onboarding</strong>
+                    <span>No fake profile without legal checks</span>
+                  </div>
+                  <div class="wf-stat">
+                    <strong>Direct contact hidden</strong>
+                    <span>Numbers and email stay masked until consultancy workflow</span>
+                  </div>
+                  <div class="wf-stat">
+                    <strong>Smart matching</strong>
+                    <span>Location, salary, experience, availability, work-area preference</span>
+                  </div>
+                </section>
+
+                <footer class="wf-footer">
+                  <span>About</span>
+                  <span>FAQs</span>
+                  <span>Privacy Policy</span>
+                  <span>Terms</span>
+                  <span>Contact</span>
+                  <span>Support</span>
+                </footer>
+              </div>
+            </div>
+          </article>
+
+          <article class="device device--mobile" data-kind="mobile">
+            <div class="device__label">Mobile View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--mobile">
+                <header class="wf-mobile-header">
+                  <div class="wf-brand">
+                    <span class="brand-mark"></span>
+                    <strong>Brand</strong>
+                  </div>
+                  <span class="wf-pill">Menu</span>
+                </header>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Mobile nav drawer</p>
+                  <div class="wf-nav-stack">
+                    <span>Home</span>
+                    <span>Jobseeker</span>
+                    <span>Employer</span>
+                    <span>Login</span>
+                    <span>Signup</span>
+                  </div>
+                </div>
+
+                <div class="wf-card wf-card--feature">
+                  <p class="wf-kicker">Brand story</p>
+                  <h3>Right jobs. Verified employers. Managed communication.</h3>
+                  <p>Simple mobile-first entry point for both sides of the hiring marketplace.</p>
+                  <div class="wf-btn-row">
+                    <span class="wf-btn wf-btn--solid">Login</span>
+                    <span class="wf-btn">Signup</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Why this platform</p>
+                  <div class="wf-step-list">
+                    <span>Profile-led job search</span>
+                    <span>Only relevant matches</span>
+                    <span>Consultancy support in every action</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Footer links</p>
+                  <div class="wf-tag-wrap">
+                    <span class="wf-tag">About</span>
+                    <span class="wf-tag">FAQ</span>
+                    <span class="wf-tag">Terms</span>
+                    <span class="wf-tag">Privacy</span>
+                    <span class="wf-tag">Contact</span>
+                    <span class="wf-tag">Support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen-group" id="screen-jobseeker-create">
+        <div class="group-heading">
+          <p class="eyebrow">Screen 02</p>
+          <h2>Jobseeker Profile Creation</h2>
+          <p>
+            Form-first onboarding for complete personal and professional data, with a structure
+            that feeds the platform's strict job matching logic.
+          </p>
+        </div>
+
+        <div class="frame-row">
+          <article class="device device--desktop" data-kind="desktop">
+            <div class="device__label">Desktop View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--desktop">
+                <header class="wf-subheader">
+                  <div>
+                    <p class="wf-kicker">Jobseeker onboarding</p>
+                    <h3>Create Skill Profile</h3>
+                  </div>
+                  <span class="wf-pill">Secure account access after signup</span>
+                </header>
+
+                <div class="wf-stepper">
+                  <span class="is-active">1. Basic Info</span>
+                  <span>2. Professional Info</span>
+                  <span>3. Match Preferences</span>
+                  <span>4. Resume Setup</span>
+                </div>
+
+                <section class="wf-grid wf-grid--profile-create">
+                  <div class="wf-card">
+                    <p class="wf-kicker">Personal information</p>
+                    <div class="wf-form-grid">
+                      <span>Full Name</span>
+                      <span>Photo Upload</span>
+                      <span>Gender / DOB</span>
+                      <span>Current City</span>
+                      <span>Permanent Address</span>
+                      <span>ID Proof</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Professional information</p>
+                    <div class="wf-form-grid">
+                      <span>Current / Desired Designation</span>
+                      <span>Total Experience</span>
+                      <span>Industry / Category</span>
+                      <span>Skills</span>
+                      <span>Current Salary</span>
+                      <span>Expected Salary Range</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Match preferences</p>
+                    <div class="wf-form-grid">
+                      <span>Preferred Locations</span>
+                      <span>Preferred Working Area</span>
+                      <span>Notice Period / Availability</span>
+                      <span>Willing to Relocate</span>
+                      <span>Preferred Shift</span>
+                      <span>Open to Move Cities</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Resume + account</p>
+                    <div class="wf-form-grid">
+                      <span>Resume Builder Fields</span>
+                      <span>Upload Existing Resume</span>
+                      <span>Photo for Resume</span>
+                      <span>Create Password</span>
+                      <span>Confirm Password</span>
+                      <span>Submit Profile</span>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="wf-grid wf-grid--two">
+                  <div class="wf-card">
+                    <p class="wf-kicker">Match engine uses</p>
+                    <div class="wf-tag-wrap">
+                      <span class="wf-tag">Designation</span>
+                      <span class="wf-tag">Experience</span>
+                      <span class="wf-tag">Location</span>
+                      <span class="wf-tag">Salary</span>
+                      <span class="wf-tag">Availability</span>
+                      <span class="wf-tag">Work Area</span>
+                      <span class="wf-tag">Relocation Choice</span>
+                    </div>
+                  </div>
+                  <div class="wf-card">
+                    <p class="wf-kicker">Primary action</p>
+                    <div class="wf-btn-row">
+                      <span class="wf-btn wf-btn--solid">Create Profile &amp; Enter Dashboard</span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </article>
+
+          <article class="device device--mobile" data-kind="mobile">
+            <div class="device__label">Mobile View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--mobile">
+                <header class="wf-mobile-header">
+                  <strong>Create Skill Profile</strong>
+                  <span class="wf-pill">Step 1/4</span>
+                </header>
+
+                <div class="wf-stepper wf-stepper--mobile">
+                  <span class="is-active">Basic</span>
+                  <span>Job</span>
+                  <span>Match</span>
+                  <span>Resume</span>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Personal info</p>
+                  <div class="wf-form-list">
+                    <span>Full Name</span>
+                    <span>Photo Upload</span>
+                    <span>Current City</span>
+                    <span>Permanent Address</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Professional info</p>
+                  <div class="wf-form-list">
+                    <span>Designation</span>
+                    <span>Experience</span>
+                    <span>Skills</span>
+                    <span>Salary Range</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Preferences</p>
+                  <div class="wf-form-list">
+                    <span>Preferred Area</span>
+                    <span>Preferred Location</span>
+                    <span>Availability</span>
+                    <span>Relocation</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Resume setup</p>
+                  <div class="wf-form-list">
+                    <span>Resume Builder</span>
+                    <span>Upload Resume</span>
+                    <span>Create Password</span>
+                  </div>
+                  <div class="wf-btn-row">
+                    <span class="wf-btn wf-btn--solid">Create Profile</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen-group" id="screen-jobseeker-dashboard">
+        <div class="group-heading">
+          <p class="eyebrow">Screen 03</p>
+          <h2>Jobseeker Dashboard</h2>
+          <p>
+            Private dashboard accessible only by jobseeker login, showing profile details, resume
+            tools, matching jobs, application flow, and a work-stability tracker.
+          </p>
+        </div>
+
+        <div class="frame-row">
+          <article class="device device--desktop" data-kind="desktop">
+            <div class="device__label">Desktop View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--desktop dashboard-shell">
+                <aside class="wf-sidebar">
+                  <div class="wf-sidebar__brand">
+                    <span class="brand-mark"></span>
+                    <strong>Jobseeker Dashboard</strong>
+                  </div>
+                  <nav class="wf-side-links">
+                    <span class="is-active">My Jobs</span>
+                    <span>Latest Job</span>
+                    <span>Resume Builder</span>
+                  </nav>
+                </aside>
+
+                <div class="wf-dashboard">
+                  <section class="wf-grid wf-grid--dashboard-top">
+                    <div class="wf-card wf-card--profile">
+                      <p class="wf-kicker">Personal information</p>
+                      <div class="profile-head">
+                        <div class="avatar-box"></div>
+                        <div class="profile-meta">
+                          <strong>Candidate Name</strong>
+                          <span>Desired role: Machine Operator</span>
+                          <span>Experience: 4 years</span>
+                          <span>Location: Pune | Relocation: Yes</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="wf-card">
+                      <p class="wf-kicker">Career tracker</p>
+                      <div class="tracker-box">
+                        <span>Current company tenure: 2.8 years</span>
+                        <div class="tracker-meter">
+                          <span class="tracker-meter__fill"></span>
+                        </div>
+                        <p>
+                          Rewarded wording: stable tenure, good signal for long-term hiring and
+                          role consistency.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="wf-card">
+                      <p class="wf-kicker">Resume tools</p>
+                      <div class="wf-step-list">
+                        <span>Build resume with profile data + photo</span>
+                        <span>Resume auto-selected when applying with resume</span>
+                        <span>Consultancy receives new apply notification</span>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="wf-card">
+                    <div class="card-head">
+                      <div>
+                        <p class="wf-kicker">My jobs</p>
+                        <h3>Only 99% matched jobs visible</h3>
+                      </div>
+                      <span class="wf-pill">Employer details hidden</span>
+                    </div>
+
+                    <div class="job-list">
+                      <article class="job-card">
+                        <div class="job-card__head">
+                          <div>
+                            <strong>CNC Machine Operator</strong>
+                            <span>Company Category: Auto Components</span>
+                          </div>
+                          <span class="match-badge">99% Match</span>
+                        </div>
+                        <div class="job-meta">
+                          <span>Experience: 4-6 years</span>
+                          <span>Location: Pune MIDC</span>
+                          <span>Salary: 2.8L - 3.6L</span>
+                          <span>Availability: Immediate</span>
+                          <span>Preferred Area: Chakan / Bhosari</span>
+                        </div>
+                        <div class="wf-btn-row">
+                          <span class="wf-btn wf-btn--solid">Apply Now</span>
+                          <span class="wf-btn">I'm Interested</span>
+                        </div>
+                      </article>
+
+                      <article class="job-card">
+                        <div class="job-card__head">
+                          <div>
+                            <strong>Quality Inspector</strong>
+                            <span>Company Category: Industrial Manufacturing</span>
+                          </div>
+                          <span class="match-badge">99% Match</span>
+                        </div>
+                        <div class="job-meta">
+                          <span>Experience: 3-5 years</span>
+                          <span>Location: Nashik</span>
+                          <span>Salary: 3.2L - 4.0L</span>
+                          <span>Availability: 15 Days</span>
+                          <span>Relocation Fit: Accepted</span>
+                        </div>
+                        <div class="wf-btn-row">
+                          <span class="wf-btn wf-btn--solid">Apply Now</span>
+                          <span class="wf-btn">I'm Interested</span>
+                        </div>
+                      </article>
+                    </div>
+                  </section>
+
+                  <section class="wf-grid wf-grid--two">
+                    <div class="wf-card">
+                      <p class="wf-kicker">Apply flow modal</p>
+                      <div class="wf-step-list">
+                        <span>Apply with Resume</span>
+                        <span>Resume auto-selected from profile</span>
+                        <span>Application moved to consultancy dashboard</span>
+                      </div>
+                    </div>
+                    <div class="wf-card">
+                      <p class="wf-kicker">Call flow</p>
+                      <div class="wf-step-list">
+                        <span>Apply with Call</span>
+                        <span>Show consultancy official number only</span>
+                        <span>Call routed to consultancy team</span>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="device device--mobile" data-kind="mobile">
+            <div class="device__label">Mobile View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--mobile">
+                <header class="wf-mobile-header">
+                  <strong>Jobseeker Dashboard</strong>
+                  <span class="wf-pill">Private Access</span>
+                </header>
+
+                <div class="wf-tab-row">
+                  <span class="is-active">My Jobs</span>
+                  <span>Latest Job</span>
+                  <span>Resume</span>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Profile summary</p>
+                  <div class="profile-head profile-head--mobile">
+                    <div class="avatar-box"></div>
+                    <div class="profile-meta">
+                      <strong>Candidate Name</strong>
+                      <span>4 yrs exp | Pune</span>
+                      <span>Move city: Yes</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Career tracker</p>
+                  <span>Current company tenure: 2.8 years</span>
+                  <div class="tracker-meter">
+                    <span class="tracker-meter__fill"></span>
+                  </div>
+                  <p>Stable history shown as positive hiring signal.</p>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">99% matched job</p>
+                  <strong>CNC Machine Operator</strong>
+                  <div class="wf-form-list">
+                    <span>Company Category only</span>
+                    <span>Pune MIDC</span>
+                    <span>Salary 2.8L - 3.6L</span>
+                    <span>Employer hidden</span>
+                  </div>
+                  <div class="wf-btn-row">
+                    <span class="wf-btn wf-btn--solid">Apply Now</span>
+                    <span class="wf-btn">Interested</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Apply options sheet</p>
+                  <div class="wf-form-list">
+                    <span>Apply with Resume</span>
+                    <span>Apply with Call</span>
+                    <span>Consultancy notified automatically</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen-group" id="screen-employer-register">
+        <div class="group-heading">
+          <p class="eyebrow">Screen 04</p>
+          <h2>Employer Company Registration</h2>
+          <p>
+            Verified company onboarding with legal compliance fields, so only genuine employers
+            can enter the hiring system.
+          </p>
+        </div>
+
+        <div class="frame-row">
+          <article class="device device--desktop" data-kind="desktop">
+            <div class="device__label">Desktop View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--desktop">
+                <header class="wf-subheader">
+                  <div>
+                    <p class="wf-kicker">Employer onboarding</p>
+                    <h3>Register Verified Company</h3>
+                  </div>
+                  <span class="wf-pill">No fake profile without legal acceptance</span>
+                </header>
+
+                <section class="wf-grid wf-grid--profile-create">
+                  <div class="wf-card">
+                    <p class="wf-kicker">Company details</p>
+                    <div class="wf-form-grid">
+                      <span>Company Name</span>
+                      <span>Industry / Category</span>
+                      <span>Company Size</span>
+                      <span>Office Address</span>
+                      <span>Website</span>
+                      <span>Official Phone</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Legal verification</p>
+                    <div class="wf-form-grid">
+                      <span>Registration Number</span>
+                      <span>GST / PAN</span>
+                      <span>Authorized Signatory</span>
+                      <span>Legal Document Upload</span>
+                      <span>Verification Checkbox</span>
+                      <span>Terms Acceptance</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Recruiter access setup</p>
+                    <div class="wf-form-grid">
+                      <span>Official Email ID</span>
+                      <span>Recruiter Name</span>
+                      <span>Department</span>
+                      <span>Password Create</span>
+                      <span>Contact Person Role</span>
+                      <span>Business Hours</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Pre-approval checklist</p>
+                    <div class="wf-step-list">
+                      <span>Real company document validation</span>
+                      <span>Official phone and email verification</span>
+                      <span>Consultancy review before dashboard activation</span>
+                    </div>
+                    <div class="wf-btn-row">
+                      <span class="wf-btn wf-btn--solid">Submit for Verification</span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </article>
+
+          <article class="device device--mobile" data-kind="mobile">
+            <div class="device__label">Mobile View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--mobile">
+                <header class="wf-mobile-header">
+                  <strong>Register Company</strong>
+                  <span class="wf-pill">Verified</span>
+                </header>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Company details</p>
+                  <div class="wf-form-list">
+                    <span>Company Name</span>
+                    <span>Industry</span>
+                    <span>Address</span>
+                    <span>Official Phone</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Legal details</p>
+                  <div class="wf-form-list">
+                    <span>Registration Number</span>
+                    <span>GST / PAN</span>
+                    <span>Upload Documents</span>
+                    <span>Accept Legal Terms</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Recruiter access</p>
+                  <div class="wf-form-list">
+                    <span>Official Email</span>
+                    <span>Password</span>
+                    <span>Authorized Contact</span>
+                  </div>
+                  <div class="wf-btn-row">
+                    <span class="wf-btn wf-btn--solid">Submit Company</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen-group" id="screen-employer-dashboard">
+        <div class="group-heading">
+          <p class="eyebrow">Screen 05</p>
+          <h2>Employer Dashboard</h2>
+          <p>
+            Verified employer workspace for posting jobs, viewing only 99% matched jobseekers,
+            and sending consultancy-managed actions like hire, shortlist, and resume view.
+          </p>
+        </div>
+
+        <div class="frame-row">
+          <article class="device device--desktop" data-kind="desktop">
+            <div class="device__label">Desktop View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--desktop dashboard-shell">
+                <aside class="wf-sidebar">
+                  <div class="wf-sidebar__brand">
+                    <span class="brand-mark"></span>
+                    <strong>Employer Dashboard</strong>
+                  </div>
+                  <nav class="wf-side-links">
+                    <span class="is-active">Active Jobs</span>
+                    <span>Close Job</span>
+                    <span>Add Job</span>
+                  </nav>
+                </aside>
+
+                <div class="wf-dashboard">
+                  <section class="wf-grid wf-grid--two-wide">
+                    <div class="wf-card">
+                      <div class="card-head">
+                        <div>
+                          <p class="wf-kicker">Add job form</p>
+                          <h3>Post a job that matches correctly</h3>
+                        </div>
+                        <span class="wf-pill">Visible to matched jobseekers only</span>
+                      </div>
+
+                      <div class="wf-form-grid">
+                        <span>Job Title / Designation</span>
+                        <span>Department / Category</span>
+                        <span>Required Experience</span>
+                        <span>Salary Range</span>
+                        <span>Job Location</span>
+                        <span>Preferred Working Area</span>
+                        <span>Skills / Tools</span>
+                        <span>Joining Availability</span>
+                        <span>Relocation Accepted</span>
+                        <span>Openings Count</span>
+                      </div>
+
+                      <div class="wf-btn-row">
+                        <span class="wf-btn wf-btn--solid">Post Job</span>
+                      </div>
+                    </div>
+
+                    <div class="wf-card">
+                      <p class="wf-kicker">Active jobs</p>
+                      <div class="wf-table">
+                        <div class="wf-table__row wf-table__row--head">
+                          <span>Role</span>
+                          <span>Status</span>
+                          <span>Matches</span>
+                        </div>
+                        <div class="wf-table__row">
+                          <span>CNC Machine Operator</span>
+                          <span>Active</span>
+                          <span>24</span>
+                        </div>
+                        <div class="wf-table__row">
+                          <span>Quality Inspector</span>
+                          <span>Active</span>
+                          <span>16</span>
+                        </div>
+                        <div class="wf-table__row">
+                          <span>Press Shop Technician</span>
+                          <span>Closed</span>
+                          <span>9</span>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="wf-card">
+                    <div class="card-head">
+                      <div>
+                        <p class="wf-kicker">Matched jobseekers</p>
+                        <h3>Only 99% fit profiles appear</h3>
+                      </div>
+                      <span class="wf-pill">Phone and email hidden</span>
+                    </div>
+
+                    <div class="bulk-bar">
+                      <span>Select Multiple</span>
+                      <span class="wf-btn">Shortlist Selected</span>
+                    </div>
+
+                    <div class="candidate-grid">
+                      <article class="candidate-card">
+                        <div class="candidate-card__top">
+                          <span class="checkbox-box"></span>
+                          <div class="avatar-box avatar-box--small"></div>
+                          <div class="profile-meta">
+                            <strong>Candidate Name</strong>
+                            <span>Machine Operator | 4 years</span>
+                            <span>Location: Pune</span>
+                          </div>
+                          <span class="match-badge">99%</span>
+                        </div>
+                        <div class="wf-tag-wrap">
+                          <span class="wf-tag">Contact hidden</span>
+                          <span class="wf-tag">Resume masked</span>
+                          <span class="wf-tag">Immediate joiner</span>
+                        </div>
+                        <div class="wf-btn-row">
+                          <span class="wf-btn wf-btn--solid">Hire Now</span>
+                          <span class="wf-btn">View Resume</span>
+                          <span class="wf-btn">Shortlist</span>
+                        </div>
+                      </article>
+
+                      <article class="candidate-card">
+                        <div class="candidate-card__top">
+                          <span class="checkbox-box"></span>
+                          <div class="avatar-box avatar-box--small"></div>
+                          <div class="profile-meta">
+                            <strong>Candidate Name</strong>
+                            <span>Quality Inspector | 5 years</span>
+                            <span>Location: Nashik</span>
+                          </div>
+                          <span class="match-badge">99%</span>
+                        </div>
+                        <div class="wf-tag-wrap">
+                          <span class="wf-tag">Email hidden</span>
+                          <span class="wf-tag">Resume visible with masked contact</span>
+                          <span class="wf-tag">Relocation yes</span>
+                        </div>
+                        <div class="wf-btn-row">
+                          <span class="wf-btn wf-btn--solid">Hire Now</span>
+                          <span class="wf-btn">View Resume</span>
+                          <span class="wf-btn">Shortlist</span>
+                        </div>
+                      </article>
+                    </div>
+                  </section>
+
+                  <section class="wf-grid wf-grid--three">
+                    <div class="wf-card">
+                      <p class="wf-kicker">Hire Now action</p>
+                      <p>Consultancy dashboard gets employer hire intent notification.</p>
+                    </div>
+                    <div class="wf-card">
+                      <p class="wf-kicker">View Resume action</p>
+                      <p>Consultancy is notified before deeper profile engagement happens.</p>
+                    </div>
+                    <div class="wf-card">
+                      <p class="wf-kicker">Shortlist action</p>
+                      <p>Single and bulk shortlist both route into consultancy workflow.</p>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="device device--mobile" data-kind="mobile">
+            <div class="device__label">Mobile View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--mobile">
+                <header class="wf-mobile-header">
+                  <strong>Employer Dashboard</strong>
+                  <span class="wf-pill">Verified Company</span>
+                </header>
+
+                <div class="wf-tab-row">
+                  <span class="is-active">Active Jobs</span>
+                  <span>Close Job</span>
+                  <span>Add Job</span>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Add job</p>
+                  <div class="wf-form-list">
+                    <span>Designation</span>
+                    <span>Experience</span>
+                    <span>Salary Range</span>
+                    <span>Location + Area</span>
+                    <span>Availability</span>
+                  </div>
+                  <div class="wf-btn-row">
+                    <span class="wf-btn wf-btn--solid">Post Job</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Matched jobseeker</p>
+                  <div class="profile-head profile-head--mobile">
+                    <span class="checkbox-box"></span>
+                    <div class="avatar-box avatar-box--small"></div>
+                    <div class="profile-meta">
+                      <strong>Candidate Name</strong>
+                      <span>4 yrs | Pune</span>
+                      <span>Phone hidden</span>
+                    </div>
+                  </div>
+                  <div class="wf-btn-row">
+                    <span class="wf-btn wf-btn--solid">Hire Now</span>
+                    <span class="wf-btn">Resume</span>
+                    <span class="wf-btn">Shortlist</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Bulk action</p>
+                  <div class="wf-form-list">
+                    <span>Select multiple profiles</span>
+                    <span>Shortlist selected</span>
+                    <span>Consultancy notified</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen-group" id="screen-consultancy">
+        <div class="group-heading">
+          <p class="eyebrow">Screen 06</p>
+          <h2>Consultancy Operations Dashboard</h2>
+          <p>
+            Central operations layer for multiple HR team members who manage employer verification,
+            jobseeker applications, resume requests, calls, shortlists, and hiring progression.
+          </p>
+        </div>
+
+        <div class="frame-row">
+          <article class="device device--desktop" data-kind="desktop">
+            <div class="device__label">Desktop View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--desktop">
+                <header class="wf-subheader">
+                  <div>
+                    <p class="wf-kicker">Consultancy dashboard</p>
+                    <h3>Multi-Operator Workflow Control</h3>
+                  </div>
+                  <span class="wf-pill">Shared by HR team operators</span>
+                </header>
+
+                <section class="wf-grid wf-grid--stats">
+                  <div class="wf-stat">
+                    <strong>New Applications</strong>
+                    <span>42 pending review</span>
+                  </div>
+                  <div class="wf-stat">
+                    <strong>Hire Requests</strong>
+                    <span>11 employer actions</span>
+                  </div>
+                  <div class="wf-stat">
+                    <strong>Resume View Alerts</strong>
+                    <span>18 employer resume opens</span>
+                  </div>
+                </section>
+
+                <section class="wf-grid wf-grid--three">
+                  <div class="wf-card">
+                    <p class="wf-kicker">Application queue</p>
+                    <div class="wf-list">
+                      <span>New apply with resume</span>
+                      <span>Interested only follow-up</span>
+                      <span>Auto-match review</span>
+                      <span>Candidate verification call</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Employer requests</p>
+                    <div class="wf-list">
+                      <span>Hire Now requests</span>
+                      <span>View Resume notifications</span>
+                      <span>Bulk shortlist processing</span>
+                      <span>Job closure approvals</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Verification desk</p>
+                    <div class="wf-list">
+                      <span>New company legal review</span>
+                      <span>Official number confirmation</span>
+                      <span>Employer authenticity checks</span>
+                      <span>Escalation to admin if needed</span>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="wf-grid wf-grid--two-wide">
+                  <div class="wf-card">
+                    <p class="wf-kicker">HR operator assignments</p>
+                    <div class="wf-table">
+                      <div class="wf-table__row wf-table__row--head">
+                        <span>Operator</span>
+                        <span>Queue</span>
+                        <span>Load</span>
+                      </div>
+                      <div class="wf-table__row">
+                        <span>HR 01</span>
+                        <span>Applications</span>
+                        <span>16</span>
+                      </div>
+                      <div class="wf-table__row">
+                        <span>HR 02</span>
+                        <span>Employer Requests</span>
+                        <span>12</span>
+                      </div>
+                      <div class="wf-table__row">
+                        <span>HR 03</span>
+                        <span>Verification Desk</span>
+                        <span>9</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Workflow pipeline</p>
+                    <div class="wf-step-list">
+                      <span>Jobseeker apply / interested / call intent arrives</span>
+                      <span>Operator validates profile and resume data</span>
+                      <span>Employer request mapped to correct candidate pipeline</span>
+                      <span>Call handling, shortlist, hiring coordination, closure</span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </article>
+
+          <article class="device device--mobile" data-kind="mobile">
+            <div class="device__label">Mobile View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--mobile">
+                <header class="wf-mobile-header">
+                  <strong>Consultancy Ops</strong>
+                  <span class="wf-pill">HR Team</span>
+                </header>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Priority counts</p>
+                  <div class="wf-form-list">
+                    <span>42 new applies</span>
+                    <span>11 hire requests</span>
+                    <span>18 resume view alerts</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Today's queues</p>
+                  <div class="wf-form-list">
+                    <span>Applications review</span>
+                    <span>Employer follow-up</span>
+                    <span>Company verification</span>
+                    <span>Call requests</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Operator assignment</p>
+                  <div class="wf-form-list">
+                    <span>HR 01 - Applications</span>
+                    <span>HR 02 - Hire Requests</span>
+                    <span>HR 03 - Verification</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen-group" id="screen-admin">
+        <div class="group-heading">
+          <p class="eyebrow">Screen 07</p>
+          <h2>Founder / CEO Admin Panel</h2>
+          <p>
+            Restricted system control layer for business settings, compliance, access rules,
+            matching logic, content settings, and audit visibility.
+          </p>
+        </div>
+
+        <div class="frame-row">
+          <article class="device device--desktop" data-kind="desktop">
+            <div class="device__label">Desktop View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--desktop">
+                <header class="wf-subheader">
+                  <div>
+                    <p class="wf-kicker">Restricted access</p>
+                    <h3>Main Admin Panel</h3>
+                  </div>
+                  <span class="wf-pill">Founder / CEO only</span>
+                </header>
+
+                <section class="wf-grid wf-grid--three">
+                  <div class="wf-card">
+                    <p class="wf-kicker">User roles</p>
+                    <div class="wf-list">
+                      <span>Founder / CEO</span>
+                      <span>Admin managers</span>
+                      <span>Consultancy HR operators</span>
+                      <span>Employer access rules</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Matching engine rules</p>
+                    <div class="wf-list">
+                      <span>Profile weight controls</span>
+                      <span>99% fit threshold</span>
+                      <span>Relocation logic</span>
+                      <span>Salary and availability priority</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Compliance controls</p>
+                    <div class="wf-list">
+                      <span>Company verification policy</span>
+                      <span>Legal terms management</span>
+                      <span>Fraud flags</span>
+                      <span>Audit logs</span>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="wf-grid wf-grid--three">
+                  <div class="wf-card">
+                    <p class="wf-kicker">Website settings</p>
+                    <div class="wf-list">
+                      <span>Branding</span>
+                      <span>Home content blocks</span>
+                      <span>Footer links</span>
+                      <span>SEO / metadata</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Notifications</p>
+                    <div class="wf-list">
+                      <span>Application alerts</span>
+                      <span>Hire request routing</span>
+                      <span>Call center number rules</span>
+                      <span>Escalation matrix</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-card">
+                    <p class="wf-kicker">Reports</p>
+                    <div class="wf-list">
+                      <span>Hiring funnel</span>
+                      <span>Active jobs</span>
+                      <span>Conversion performance</span>
+                      <span>Operator productivity</span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </article>
+
+          <article class="device device--mobile" data-kind="mobile">
+            <div class="device__label">Mobile View</div>
+            <div class="device__chrome"></div>
+            <div class="device__body">
+              <div class="app app--mobile">
+                <header class="wf-mobile-header">
+                  <strong>Admin Panel</strong>
+                  <span class="wf-pill">Founder Only</span>
+                </header>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">System controls</p>
+                  <div class="wf-form-list">
+                    <span>User roles</span>
+                    <span>Matching rules</span>
+                    <span>Legal controls</span>
+                    <span>Reports</span>
+                  </div>
+                </div>
+
+                <div class="wf-card">
+                  <p class="wf-kicker">Website settings</p>
+                  <div class="wf-form-list">
+                    <span>Branding</span>
+                    <span>Home page content</span>
+                    <span>Footer links</span>
+                    <span>Notifications</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
