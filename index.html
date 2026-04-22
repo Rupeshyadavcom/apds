@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanai Hire Bridge</title>
+  <meta
+    name="description"
+    content="Responsive hiring platform demo connecting Indian jobseekers, verified employers, consultancy operators, and founder-only admin controls."
+  >
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <button class="brand" type="button" data-action="navigate" data-route="home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__copy">
+          <strong id="brandName">Lanai Hire Bridge</strong>
+          <small>Consultancy-managed hiring</small>
+        </span>
+      </button>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        Menu
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <button class="site-nav__link" type="button" data-action="navigate" data-route="home">Home</button>
+        <button class="site-nav__link" type="button" data-action="navigate" data-route="jobseeker">Jobseeker</button>
+        <button class="site-nav__link" type="button" data-action="navigate" data-route="employer">Employer</button>
+        <button class="site-nav__link" type="button" data-action="navigate" data-route="login">Login</button>
+        <button class="site-nav__link site-nav__link--primary" type="button" data-action="navigate" data-route="signup">Signup</button>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-pill" id="dashboardButton" type="button" data-action="open-dashboard" hidden>
+          Dashboard
+        </button>
+        <button class="header-pill header-pill--ghost" id="logoutButton" type="button" data-action="logout" hidden>
+          Logout
+        </button>
+      </div>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <div class="modal-root" id="modalRoot" hidden></div>
+    <div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="true"></div>
+  </div>
+
+  <noscript>
+    <div class="noscript">
+      This website demo needs JavaScript enabled to run the role-based hiring workflows.
+    </div>
+  </noscript>
+</body>
+</html>
